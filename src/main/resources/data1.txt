@@ -1,0 +1,14 @@
+-- The encrypted password is `keshar`
+INSERT INTO users (id, username, password, enabled, account_non_Expired, account_non_Locked, credentials_non_Expired) VALUES (1, 'keshar', '$2a$10$1TErPevAkxi2hmZ19FN1lO41nT/I/PjybTgh1/2hwc0Q0Lj3mhtlS', true, true,true,true);
+
+
+-- The encrypted password is `pick@dropN3p@l`
+INSERT INTO oauth_client_details (client_id, client_secret, scope, authorized_grant_types, authorities, access_token_validity) VALUES ('mobile', '$2a$10$2Vr12QGGS6TQhbMf28nY4ehzHO9CYefuSQTAvAI1AzG2wZdj72wKe', 'read,write', 'password,refresh_token,client_credentials', 'ROLE_CLIENT', 3600000);
+
+
+INSERT INTO authorities (id, user_id, authority) VALUES (1, 1, 'ADMIN');
+INSERT INTO authorities (id, user_id, authority) VALUES (2, 1, 'USER');
+INSERT INTO authorities (id, user_id, authority) VALUES (3, 1, 'DELIVERY');
+INSERT INTO authorities (id, user_id, authority) VALUES (4, 1, 'OPERATION');
+INSERT INTO authorities (id, user_id, authority) VALUES (5, 1, 'SUPERADMIN');
+INSERT INTO authorities (id, user_id, authority) VALUES (6, 1, 'CUSTOMER');
